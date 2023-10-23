@@ -5,5 +5,20 @@ header{
 }
 h1{
     color: coral;
-    font-weight:initial
+  font-weight: initial;
+}
+img { max-width: 400px;
+min-width: 400px;
+}
+
+body{background-color: darkgrey;
+}
+footer {background-color: aquamarine;
+    text-align: center;
+    padding: 20px;
+}
+h2{color: rgb(12, 63, 37);
+   font-weight: initial;
+
+
 }

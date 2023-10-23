@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,125 +8,230 @@
     <title>Manual git </title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header>
         <h1>MANUAL GIT</h1>
     </header>
+
+    <img src="./IMG/git.jpg" alt="foto git">
     <main>
-        <P>Git é um sistema de controle de versão de arquivos. Através deles podemos desenvolver projetos na qual diversas pessoas podem contribuir simultaneamente no mesmo, editando e criando novos arquivos e permitindo que os mesmos possam existir sem o risco de suas alterações serem sobrescritas.<P>
+        <P>Git é um sistema de controle de versão de arquivos. Através deles podemos desenvolver projetos na qual
+            diversas pessoas podem contribuir simultaneamente no mesmo, editando e criando novos arquivos e permitindo
+            que os mesmos possam existir sem o risco de suas alterações serem sobrescritas.
+        <P>
 
-   
-   <H2>GERAL</H2>
-   
-         <P>Criado pelo engenheiro de software Linus Torvalds, conhecido por ter desenvolvido, também, o núcleo Linux, o GIT é um Sistema de Controle de Versões Distribuído — ou DVCS.</P><br>
 
-         <p>Estes sistemas de controle possuem a função de registrar quaisquer alterações feitas em cima de um código, armazenando essas informações e permitindo que, caso seja necessário, um(a) programador(a) possa regredir a versões anteriores de uma aplicação de modo simples e rápido.</p><br>
+        <H2>GERAL</H2>
 
-         <p>Este tipo de sistema também simplifica muito o processo de compartilhamento de um projeto com um time, por exemplo, ou com outros(as) programadores(as).</p>
+        <P>Criado pelo engenheiro de software Linus Torvalds, conhecido por ter desenvolvido, também, o núcleo Linux, o
+            GIT é um Sistema de Controle de Versões Distribuído — ou DVCS.</P><br>
 
-     <h2>OS CONCEITOS DO GIT</h2>
-        
-        <p>Para começar a utilizar o GIT, é importante que você reconheça e compreenda alguns dos principais conceitos utilizados pela ferramenta.</p><br>
+        <p>Estes sistemas de controle possuem a função de registrar quaisquer alterações feitas em cima de um código,
+            armazenando essas informações e permitindo que, caso seja necessário, um(a) programador(a) possa regredir a
+            versões anteriores de uma aplicação de modo simples e rápido.</p><br>
 
-    <h2>Repositório</h2>
+        <p>Este tipo de sistema também simplifica muito o processo de compartilhamento de um projeto com um time, por
+            exemplo, ou com outros(as) programadores(as).</p>
+
+        <h2>OS CONCEITOS DO GIT</h2>
+
+        <p>Para começar a utilizar o GIT, é importante que você reconheça e compreenda alguns dos principais conceitos
+            utilizados pela ferramenta.</p><br>
+
+        <h2>Repositório</h2>
 
         <p>Os repositórios são os ambientes criados para armazenar seus códigos.</p><br>
 
-        <p>Você pode possuir um ou mais repositórios, públicos ou privados, locais ou remotos, e eles podem armazenar não somente os próprios códigos a serem modificados, mas também imagens, áudios, arquivos e outros elementos relacionados ao seu projeto.</p><br>
+        <p>Você pode possuir um ou mais repositórios, públicos ou privados, locais ou remotos, e eles podem armazenar
+            não somente os próprios códigos a serem modificados, mas também imagens, áudios, arquivos e outros elementos
+            relacionados ao seu projeto.</p><br>
 
-        <p>É através dos seus repositórios públicos que outros programadores poderão ter acesso aos seus códigos no GitHub, podendo, inclusive, cloná-los para adicionar melhorias.</p><br>
+        <p>É através dos seus repositórios públicos que outros programadores poderão ter acesso aos seus códigos no
+            GitHub, podendo, inclusive, cloná-los para adicionar melhorias.</p><br>
 
 
-    <h2>Branch</h2>
+        <h2>Branch</h2>
 
 
         <p>Branch é o nome dado a uma versão (ramificação) do projeto. </p><br>
 
-        <p>Isso é útil porque possibilita gerenciar múltiplas alterações acontecendo simultaneamente. Por exemplo, podemos fazer com que cada equipe de desenvolvimento</p><br>
+        <p>Isso é útil porque possibilita gerenciar múltiplas alterações acontecendo simultaneamente. Por exemplo,
+            podemos fazer com que cada equipe de desenvolvimento</p><br>
 
-    <h2>Merge</h2>
+        <h2>Merge</h2>
 
         <p>Para unir as modificações feitas em um branch ao código original, utilizamos o comando merge.</p><br>
 
-        <p>Com esta funcionalidade, todas as alterações feitas em cópias manipuláveis são inseridas, após aprovadas, no código-fonte original sem complicações.</p><br>
+        <p>Com esta funcionalidade, todas as alterações feitas em cópias manipuláveis são inseridas, após aprovadas, no
+            código-fonte original sem complicações.</p><br>
 
-    <h2>Fork</h2>  
-        <p>Quando um profissional desenvolvedor precisa começar a trabalhar em um projeto, seu primeiro passo é copiar este repositório para a sua máquina.</p><br>
+        <h2>Fork</h2>
+        <p>Quando um profissional desenvolvedor precisa começar a trabalhar em um projeto, seu primeiro passo é copiar
+            este repositório para a sua máquina.</p><br>
 
         <p>Este processo é realizado pelo comando fork.</p><br>
 
-        <p>O fork também é uma funcionalidade útil quando um membro da equipe precisa pegar um código público para manuseá-lo em um editor de código local ou interno.</p>
+        <p>O fork também é uma funcionalidade útil quando um membro da equipe precisa pegar um código público para
+            manuseá-lo em um editor de código local ou interno.</p>
 
 
-    <H2>Ignorar arquivos</H2>
-    
-     <P>Os nomes de arquivos/diretórios ou extensões de arquivos listados no arquivo .gitignore não serão adicionados em um repositório. Existem dois arquivos .gitignore, são eles</P><BR>
+        <H2>Ignorar arquivos</H2>
 
-    <ul>
-        <li>Geral: Normalmente armazenado no diretório do usuário do Sistema Operacional. O arquivo que possui a lista dos arquivos/diretórios a serem ignorados por todos os repositórios deverá ser declarado conforme citado acima. O arquivo não precisa ter o nome de .gitignore.</li><br>
-
-        <li>Por repositório: Deve ser armazenado no diretório do repositório e deve conter a lista dos arquivos/diretórios que devem ser ignorados apenas para o repositório específico.</li><br>
-
-    </ul>
-
-
-
-
-    <h2>PRINCIPAIS COMANDOS GIT</h2>
+        <P>Os nomes de arquivos/diretórios ou extensões de arquivos listados no arquivo .gitignore não serão adicionados
+            em um repositório. Existem dois arquivos .gitignore, são eles</P><BR>
 
         <ul>
-            <li>INIT: este comando dá origem a um repositório novo, local ou remoto, ou reinicializa um repositório já existente;</li><br>
-            <li>CLONE: este comando clona o código de um repositório para sua manipulação em outro ambiente;</li><br>
-            <li>COMMIT: este comando move os arquivos da state area para um repositório local;</li><br>
-            <li>ADD: este comando adiciona um arquivo alterado a uma staging area, ou seja, o prepara para ser vinculado a um commit;</li><br>
-            <li>PUSH: este comando envia arquivos de um repositório local para um repositório remoto. No GitHub, por exemplo;</li><br>
-            <li>PULL: ao contrário do push, este comando traz um arquivo do repositório remoto para o repositório local.</li><br>
-            <li>MERGE: este comando serve para unir arquivos alterados ao arquivo original de um projeto. Em outras palavras, é ele quem une os branchs as commits.</li><br>
-            <li>LOG: este comando permite a visualização do histórico de commits de um arquivo ou usuário, ou o acesso de uma versão específica.</li><br>
+            <li>Geral: Normalmente armazenado no diretório do usuário do Sistema Operacional. O arquivo que possui a
+                lista dos arquivos/diretórios a serem ignorados por todos os repositórios deverá ser declarado conforme
+                citado acima. O arquivo não precisa ter o nome de .gitignore.</li><br>
+
+            <li>Por repositório: Deve ser armazenado no diretório do repositório e deve conter a lista dos
+                arquivos/diretórios que devem ser ignorados apenas para o repositório específico.</li><a
+                href="#explicaçao">ir para explicação</a><br>
+
         </ul>
 
+        <h2>GIT</h2>
+        <P>Git
+            Imagine que, há alguns meses, você desenvolveu um site que possuía determinada função.
+        <p> <BR>
+
+        <p> Com o passar do tempo, essa função perdeu sua utilidade e você foi instruído a retirá-la do código fonte
+            deste site.
+        <p> <br>
+
+        <p> Após seis meses, por uma questão de estratégia de negócio, essa função deve ser novamente implementada.
+        <p> <br>
+
+        <p> Para programadores(as) que utilizam o GIT, reincluir a funcionalidade é uma tarefa simples: basta buscar, em
+            seu repositório, a versão que a contempla e retomá-la.
+        <p> <br>
+
+        <p> Para aqueles(as) que não utilizam, talvez seja necessário reescrever o código desta função, consumindo
+            novamente o tempo gasto para desenvolvê-la da primeira vez.
+        <p> <br>
+
+        <p> Diante desta situação, podemos concluir que uma das maiores vantagens de usar o GIT é a economia de tempo e
+            recursos, uma vez que a consulta de diferentes versões de uma mesma aplicação é muito recorrente no trabalho
+            do(a) programador(a).
+        <p><br>
+
+        <p> Outro grande benefício do GIT é justamente o fato de ele ser um sistema distribuído.
+        <p> <br>
+
+        <p> Isso significa que, diferentemente de outros sistemas de controle de versionamento populares na época em que
+            foi lançado, o GIT possui repositórios, e não somente um único local com o histórico de seu trabalho.
+        <p><br>
+
+        <p> Para auxiliar o trabalho em equipe, recursos como o fluxo de desenvolvimento do Gitflow também trazem muitos
+            benefícios, inclusive porque pode ser acessado por qualquer membro do time em qualquer lugar.
+        <p> <br>
+
+        <p> Ou seja, por ser o mais rápido controle de versionamentos existente hoje no mercado, o GIT vale a pena
+            porque proporciona a seus usuários e estudantes de programação grande otimização de tempo e recursos.</P>
 
 
-    
+        <h2>PRINCIPAIS COMANDOS GIT</h2>
+
+        <ul>
+            <li>INIT: este comando dá origem a um repositório novo, local ou remoto, ou reinicializa um repositório já
+                existente;</li><br>
+            <li>CLONE: este comando clona o código de um repositório para sua manipulação em outro ambiente;</li><br>
+            <li>COMMIT: este comando move os arquivos da state area para um repositório local;</li><br>
+            <li>ADD: este comando adiciona um arquivo alterado a uma staging area, ou seja, o prepara para ser vinculado
+                a um commit;</li><br>
+            <li>PUSH: este comando envia arquivos de um repositório local para um repositório remoto. No GitHub, por
+                exemplo;</li><br>
+            <li>PULL: ao contrário do push, este comando traz um arquivo do repositório remoto para o repositório local.
+            </li><br>
+            <li>MERGE: este comando serve para unir arquivos alterados ao arquivo original de um projeto. Em outras
+                palavras, é ele quem une os branchs as commits.</li><br>
+            <li>LOG: este comando permite a visualização do histórico de commits de um arquivo ou usuário, ou o acesso
+                de uma versão específica.</li><br>
+        </ul>
+        <h2>COMANDOS INICIAIS</h2><BR>
+        <p>GIT CONFIG –GLOBAL USER.NAME“SEU NOME”: este comando ajuda a configurar o nome de usuário que sera registrado
+            nos seus commits
+        <p><br>
+
+        <p>GIT CONFIG –GLOBAL USER. EMAIL “SEU EMAIL”: este comando configura o seu email que sera associado ao git </p>
+        <br>
+
+        <h2>REPOSITÓRIO LOCAL</h2><br>
 
 
 
+        <p<>GIT STATUS: ajuda a ver o estado dos arquivos/ diretórios
+            </p><br>
+
+            <p>GIT ADD . OU GIT ADD "NOME DO ARQUIVO": este comando adiciona alteraçoes dos arquivos ou pastas deixando
+                tudo pronto para um commit</p><br>
+
+            <p>GIT COMMIT -M "MENSAGEM DO COMMIT": registra as alteraçoes</p><br>
+
+            <p>GIT LOG: usando o git log nos conseguimos ver o histórico de commits já feitos </p><br>
+
+            <h2>COMO USAR O .GITIGNORE?</h2> <a id="explicaçao"></a>
+
+            <h4>devo criar um ou vários arquivos .gitignore?</h4>
+
+            <p>A resposta depende de sua necessidade. Porém, um único gitignore é suficiente.
+
+                Quando temos um repositório que apresenta uma quantidade mais reduzida de arquivos e diretórios,
+                geralmente utilizamos um único arquivo do .gitignore para ignorar os conteúdos que desejamos.
+
+                Já em casos em que a empresa apresenta repositórios maiores, ter diversos gitignore pode acabar
+                facilitando ou trazendo algum benefício de certa forma. Porém, isso deve ser analisado com bastante
+                cautela já que você terá um trabalho maior ao criar diversos .gitignore. É importante notar que, no
+                momento do build, todos os arquivos gitignore estarão unidos gerando apenas um único.</p>
+
+
+            <h2>COMO USAR O .GITIGNORE APÓS O COMMIT?</h2>
+            <P>Imaginando o cenário no qual você acabou já realizando commits dentro de seu repositório porém houve a
+                necessidade de ignorar um arquivo, você deve excluir o arquivo de dentro do repositório e realizar a
+                criação do arquivo .gitignore com a regra que deseja ignorar.</P><BR>
+
+            <P>Essa exclusão de arquivo é bem simples, você pode acompanhar o passo a passo abaixo:</P>
+
+            <h4>1- verifique se o arquivo realmente existe. Para isso, rode o seguinte comando:</h4>
+            <p>echo test.log >> .gitignore</p>
+
+            <h4>2- Logo em seguida vamos remover o arquivo para que possamos ignorar, rode então o comando:</h4>
+            <p>git rm –cached test.log
+            <p>
+
+            <h4>3- Por último, chegou o momento do commit do arquivo. Então, você pode rodar o seguinte comando:</h4>
+            <p>git add . && git commit -m “Ignorando o arquivo test.log”</p> <br><br>
+            
+            
+
+        <table border="1px">
+            <tr>
+                <th>nome</th>
+                <th>criador</th>
+                <th>ano de criação</th>
+             </tr>
+             <tr>
+                <td>GIT</td>
+                <td>Linus Torvalds</td>
+                <td>2005</td> 
+            </tr>
+
+        </table> 
         
+             <p>para saber mais clique aqui</p>
+                <a href="https://git-scm.com/docs/git#_git_commands" target="_blank">documentação GIT</a>
+            </p>
 
-
-   
-   
-   
-   
-    <h3>COMANDOS INICIAIS</h3><BR>
-        <p>GIT CONFIG –GLOBAL USER.NAME“SEU NOME”: este comando ajuda a configurar o nome de usuário que sera registrado nos seus commits<p><br>
-
-        <p>GIT CONFIG –GLOBAL USER. EMAIL “SEU EMAIL”: este comando configura o seu email que sera associado ao git </p><br>
-
-  <h3>REPOSITÓRIO LOCAL</h3><br>
-
-        <p>GIT INIT: Inicializa um repositório Git no diretório criando uma forma para rastrear e gerenciar alterações nos arquivos do seu site.</p><br>
-
-        <p<>GIT STATUS: ajuda a ver o estado doas arquivos/ diretórios
-        </p><br>
-
-        <p>GIT ADD  . OU GIT ADD "NOME DO ARQUIVO": este comando adiciona alteraçoes dos arquivos ou pastas deixando tudo pronto para um commit</p><br>
-
-        <p>GIT COMMIT -M "MENSAGEM DO COMMIT": registra as alteraçoes</p><br>
-
-        <p>GIT LOG: usando o git log nos conseguimos ver o histórico de commits já feitos </p><br>
-        
-    <h3>TRABALHO COM REPOSITORIOS REMOTOS</h3><br>
-       
-        <p>GIT REMOTE ADD ORIGIN "URL DO REPOSITORIO REMOTO" : ele adiciona um endereço ao git<p><br>
-       
-
-        <p>GIT PULL ORIGIN "MAIN OU MASTER": ele pega as alterações que fizemos no repositório remoto pra manter o site local atualizado</p><br>
-
-        <p>GIT PUSH ORIGIN "MAIN OU MASTER": envia as alteraçoes locais para o repositório remoto</p><br>
 
     </main>
 
+    <footer>
+        <p> desenvolvido por Sofia Mota </p>
+    </footer>
+
 
 </body>
+
 </html>
